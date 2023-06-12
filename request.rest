@@ -1,0 +1,93 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+  "name": "Algum serviço",
+  "description": "Alguam descrição",
+  "price": 1400,
+  "image": "https://picsum.photos/200/300"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+
+###
+
+GET http://localhost:3000/api/services/64871fa279ff86b6e1346a82
+
+###
+DELETE http://localhost:3000/api/services/6487233a03980c6a1d1e95a5
+
+###
+PUT http://localhost:3000/api/services/64871fa279ff86b6e1346a81
+Content-Type: application/json
+
+{
+  "name": "TESTE ATUALIZAÇÃO",
+  "description": "Alguam descrição",
+  "price": 2500,
+  "image": "https://picsum.photos/200/300"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+  "title": "Meu Evento 2 ",
+  "author": "Vanclerison",
+  "description": "Uma festa de aniversário",
+  "budget": 3000,
+  "image": "https://picsum.photos/200/300",
+  "services": [
+    {
+      "name": "Algum serviço 1",
+      "description": "Alguam descrição",
+      "price": 3000,
+      "image": "https://picsum.photos/200/300"
+    },
+    {
+      "name": "Algum serviço 2 ",
+      "description": "Alguam descrição",
+      "price": 1600,
+      "image": "https://picsum.photos/200/300"
+    }
+  ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/64872a2814fa1710e28e740d
+
+###
+DELETE http://localhost:3000/api/parties/64872a2814fa1710e28e740d
+
+###
+PUT http://localhost:3000/api/parties/64872abe14fa1710e28e740f
+Content-Type: application/json
+
+{
+  "title": "Meu Evento 2 ",
+  "author": "Vanclerison",
+  "description": "Uma festa de aniversário",
+  "budget": 1000,
+  "image": "https://picsum.photos/200/300",
+  "services": [
+    {
+      "name": "Algum serviço 1",
+      "description": "Alguam descrição",
+      "price": 3000,
+      "image": "https://picsum.photos/200/300"
+    },
+    {
+      "name": "Algum serviço 2 ",
+      "description": "Alguam descrição",
+      "price": 1600,
+      "image": "https://picsum.photos/200/300"
+    }
+  ]
+}
